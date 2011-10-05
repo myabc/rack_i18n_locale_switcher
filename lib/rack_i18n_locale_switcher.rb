@@ -4,6 +4,8 @@ require 'i18n'
 module Rack
   class I18nLocaleSwitcher
 
+    VERSION = '0.0.1'
+
     attr_accessor :available_locales, :default_locale
 
     def initialize(app, *args)
