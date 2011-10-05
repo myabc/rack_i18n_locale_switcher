@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'spec'
+require 'rspec'
 require 'rack'
 require 'rack/builder'
 require 'rack/test'
@@ -8,7 +8,7 @@ require 'rack/test'
 ENV['RACK_ENV'] = 'test'
 
 
-Spec::Runner.configure do |conf|
+RSpec.configure do |conf|
   conf.include Rack::Test::Methods
 
   require File.dirname(__FILE__) + "/../lib/rack_i18n_locale_switcher"
