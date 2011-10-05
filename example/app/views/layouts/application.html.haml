@@ -3,12 +3,11 @@
   %head
     %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "content-type" }
     %title Rack location switch
-  
+
   %body
     = yield
-    
+
     %hr
     = render :partial => "/shared/navigation.html"
     %hr
     = render :partial => "/shared/locale_links.html"
-    
