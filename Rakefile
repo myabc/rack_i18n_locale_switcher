@@ -1,7 +1,7 @@
 require 'rake'
-require 'spec/rake/spectask'
+require 'rspec/core/rake_task'
 
-desc "Run all examples"
-Spec::Rake::SpecTask.new('spec') do |t|
-  t.spec_files = FileList['spec/**/*.rb']
+desc 'Run all examples'
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = FileList['spec/**/*_spec.rb']
 end
